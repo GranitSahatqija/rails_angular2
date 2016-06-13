@@ -1,16 +1,18 @@
 import {Component} from "angular2/core";
-import {DataService} from "./services/data.service";
+import {DataService} from "../services/data.service";
 
 @Component({
     selector: 'component-1',
-    template: `<button (click)="onTestGet()">Test Get Request</button><br>
-                <p>Output asd {{getData}}</p><br>
-                 <button (click)="onTestPost()">Test Post Data</button><br>
-                 <p>OutPut: {{postData}}</p>`,
+    template: `<div>
+                    <button (click)="onTestGet()">Test Get Request</button><br>
+                    <p>Output {{getData}}</p><br>
+                    <button (click)="onTestPost()">Test Post Data</button><br>
+                    <p>OutPut: {{postData}}</p>
+               </div>`,
     providers: [DataService]
 })
 
-export class Component1Component{
+export class Component1Component {
 
         getData: string;
         postData: string;
@@ -33,5 +35,4 @@ export class Component1Component{
                     () => console.log('finished')
                 );
         }
-
 }
