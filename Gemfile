@@ -9,6 +9,7 @@ gem 'sprockets'
 gem 'rack-cors'
 gem 'jquery-rails', "~> 2.3.0"
 gem 'uglifier', '>= 1.3.0'
+gem 'turbolinks'
 
 
 group :production do
