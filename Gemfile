@@ -8,6 +8,8 @@ gem 'rails', '4.2.6'
 gem 'sprockets'
 gem 'rack-cors'
 gem 'jquery-rails', "~> 2.3.0"
+gem 'uglifier', '>= 1.3.0'
+
 
 group :production do
   gem 'pg'
